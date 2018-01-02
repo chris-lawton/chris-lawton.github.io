@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>50 States</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+<div class="incorrect">Guess again!</div>
+
+  <!-- <b class="US_flag"></b> -->
+
+<header class="header">
+  <div class="buttons">
+    <span class="button js-reveal-all">Reveal</span>
+    <span class="button__pipe">|</span>
+    <span class="button js-clear">Start again</span>
+  </div>
+  <div class="counter">
+    <span class="score">0</span>
+    <span> / </span>
+    <span class="js-target-score">50</span>
+  </div>
+
+  <form class="search-form">
+    <input type="text" class="search" placeholder="Guess a State">
+  </form>
+</header>
+
+<div class="wrapper">
+    <ul class="state-list"></ul>
+</div>
+<audio src="audio/anthem.mp3"></audio>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

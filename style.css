@@ -1,5 +1,8 @@
 :root {
   --color-primary: #ffffffa3;
+  --color-secondary: #ffffff60;
+  --color-purple: #363795;
+  --color-blue: #005C97;
 }
 
 body {
@@ -19,8 +22,7 @@ button, input, optgroup, select, textarea {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  background: #005C97;
-  background: linear-gradient(to right, #363795, #005C97);
+  background: linear-gradient(to right, var(--color-purple), var(--color-blue));
   position: relative;
 }
 
@@ -38,7 +40,7 @@ button, input, optgroup, select, textarea {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  color: #ffffffa3;
+  color: var(--color-primary);
 }
 
 .counter span {
@@ -94,7 +96,7 @@ button, input, optgroup, select, textarea {
 
 .search {
   width: 100%;
-  padding: 10px 10px 0;
+  padding: 5px 5px 0;
   border: 0;
   background: transparent;
   border-bottom: 3px solid #ffffffbf;
@@ -105,16 +107,16 @@ button, input, optgroup, select, textarea {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #ffffffbf;
+  color: var(--color-secondary);
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: #ffffffbf;
+  color: var(--color-secondary);
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: #ffffffbf;
+  color: var(--color-secondary);
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: #ffffffbf;
+  color: var(--color-secondary);
 }
 
 .incorrect {

@@ -65,8 +65,7 @@ button, input, optgroup, select, textarea {
   display: none;
   padding: 10px;
   margin: 5px;
-  /* filter: blur(5px); */
-  transition: filter, background .25s ease-in-out;
+  transition: background .25s ease-in-out;
 }
 
 .state-list li.is-easier {
@@ -75,13 +74,11 @@ button, input, optgroup, select, textarea {
 
 .state-list li.correct {
   display: inline-block;
-  /* filter: blur(0); */
   background: #9cdc9c61;
 }
 
 .state-list li.correct-not-guessed {
   display: inline-block;
-  /* filter: blur(0); */
   background: #bc9cdc61;
 }
 

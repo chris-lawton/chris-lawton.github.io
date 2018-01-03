@@ -39,7 +39,7 @@
         liMaker(item);
     });
 
-    // Clear localStorage on click
+    // Clear localStorage
     clear.addEventListener('click', () => {
         localStorage.clear();
         while (statesList.firstChild) {
@@ -47,7 +47,7 @@
         };
         scoreHtml.innerHTML = 0;
         location.reload();
-    })
+    });
 
     // Update the score
     function updateScore(){
@@ -133,5 +133,4 @@
             liMaker(item, 'correct-not-guessed');
         });
     });
-
 })();

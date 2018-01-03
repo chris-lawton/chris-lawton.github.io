@@ -29,7 +29,6 @@
     const liMaker = (item, customClass = 'correct') => {
         const li = document.createElement('li');
         li.classList.add(customClass);
-        // li.setAttribute('data-state', item);
         li.textContent = item;
         statesList.appendChild(li);
     }
@@ -106,7 +105,6 @@
         // Correct
         liMaker(guess);
 
-        // match.classList.add('correct');
         updateScore();
         updateStorage(guess);
         searchInput.value='';

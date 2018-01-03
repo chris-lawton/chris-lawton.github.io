@@ -23,6 +23,7 @@
     }).then((data) => {
         window.states = data;
         targetScore.innerHTML = states.length;
+        searchInput.focus();
     });
 
     // create li and add to ul
